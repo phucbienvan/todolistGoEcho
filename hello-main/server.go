@@ -23,7 +23,7 @@ func main() {
 
 	//Routes task
 	e.POST("/register", createItem)
-	e.GET("/find/:id", findByItem)
+	e.GET("/item/:id", findByItem)
 	e.GET("/list", listItems)
 	e.PUT("item/:id", editItem)
 	e.DELETE("/delete/:id", deleteItem)
